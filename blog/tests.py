@@ -1,5 +1,5 @@
 from django.http import response
-from django.test import TestCase
+from django.test import TestCase, reverse
 from django.contrib.auth import get_user_model
 from .models import Post
 
