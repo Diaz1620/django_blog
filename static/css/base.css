@@ -1,6 +1,9 @@
-h3 {
-    color:red;
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    color:red;
     font-weight: 500;
 }
 
@@ -9,13 +12,20 @@ a {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #subtitle {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
+    font-style: italic;
+}
+
+li {
+    list-style: none;
+}
+
+.rights{
+    font-weight: 300;
     font-style: italic;
 }
 

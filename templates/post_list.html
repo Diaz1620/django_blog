@@ -5,11 +5,20 @@
 {% block content %}
     <ul>
     {% for post in post_list %}
-        <li>
-            <a href="{% url 'post_detail' post.id %}"><h3>{{ post.title }}</h3></a>
-            <p id="subtitle">By {{ post.author }} | Created: {{ post.created_at }}</p>
-            <p>{{ post.body }}</p>
-        </li>
+    <li>
+        <div class="row">
+            <div class="col-sm-6 m-2 p-1">
+                <div class="card">
+                <div class="card-body">
+                    <a href="{% url 'post_detail' post.id %}"><h5 class="card-title">{{ post.title }}</h5></a>
+                    <p class="card-text">{{ post.body }}</p>
+                    <p id="subtitle">By {{ post.author }} | Created: {{ post.created_at }}</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                </div>
+            </div>
+        </div>
+    </li>
     {% endfor %}
     </ul>
 
