@@ -5,16 +5,8 @@
 {% block content %}
     <h1>Create New Post</h1>
     <form method="POST">
-        <div class="container">
-            <div>
-                <label class="form-label" for="title">Title</label>
-                <input class="form-control" type="text" name="title" id="title">
-            </div>
-            <div>
-                <label class="form-label" for="body">Body</label>
-                <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
-            </div>
-            <input type="submit" value="submit">
-        </div>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create">
     </form>
 {% endblock content %}
