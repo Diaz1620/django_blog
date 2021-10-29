@@ -8,6 +8,8 @@
         <h2 class="title">{{ post.title }}</h2>
         <p>{{ post.body }}</p>
         <p class="rights">By: {{ post.author }} Created: {{ post.created_at }}</p>
+        <a href="{% url 'post_edit' post.id %}">Edit</a>
+        <a href="{% url 'post_delete' post.id %}">Delete</a>
     </div>
 </div>
 {% endblock content %}
