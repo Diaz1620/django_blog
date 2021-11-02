@@ -7,5 +7,6 @@
     <p>Are you sure you want to remove "{{ post.title }}"?</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="submit" value="confirm">
+        <input class="btn btn-warning" type="submit" value="Confirm">
     </form>
+{% endblock content %}
